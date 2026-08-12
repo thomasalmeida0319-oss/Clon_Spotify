@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+ <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clon Spotify — Explorar</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="description" content="Explorar géneros y buscar música" />
+ </head>
+ <body>
+  <nav class="nav">
+   <a class="brand" href="./index.html" aria-label="Inicio">
+    <img
+     src="img/logo.png"
+     alt="Soundify logo"
+     class="brand-logo"
+     width="36"
+     height="36"
+    />
+    <span class="brand-text">Soundify</span>
+   </a>
+   <ul class="nav-links">
+    <li><a href="./index.html">Inicio</a></li>
+    <li><a href="./explorar.html" class="active">Explorar</a></li>
+    <li><a href="./contacto.html">Iniciar sesión</a></li>
+   </ul>
+  </nav>
+
+  <main class="container">
+   <header class="hero">
+    <h1>Explorar</h1>
+    <p class="muted">Encuentra tu próximo artista o playlist</p>
+   </header>
+
+   <section class="section search-section">
+    <label for="search" class="visually-hidden">Buscar</label>
+    <input
+     id="search"
+     type="search"
+     placeholder="¿Qué quieres escuchar?"
+     aria-label="Buscar"
+    />
+   </section>
+
+   <section class="section genres">
+    <h2>Géneros y estados de ánimo</h2>
+    <div class="grid genres-grid">
+     <article
+      class="genre card"
+      style="background: linear-gradient(135deg, #ff8a65, #ff7043)"
+     >
+      <img src="img/genre1.svg" alt="Pop" />
+      <h3>Pop</h3>
+     </article>
+     <article
+      class="genre card"
+      style="background: linear-gradient(135deg, #42a5f5, #1e88e5)"
+     >
+      <img src="img/genre2.svg" alt="Rock" />
+      <h3>Rock</h3>
+     </article>
+     <article
+      class="genre card"
+      style="background: linear-gradient(135deg, #7e57c2, #5e35b1)"
+     >
+      <img src="img/genre3.svg" alt="Hip-Hop" />
+      <h3>Hip-Hop</h3>
+     </article>
+     <article
+      class="genre card"
+      style="background: linear-gradient(135deg, #ffca28, #ffc107)"
+     >
+      <img src="img/genre4.svg" alt="Podcasts" />
+      <h3>Podcasts</h3>
+     </article>
+     <article
+      class="genre card"
+      style="background: linear-gradient(135deg, #ef5350, #e53935)"
+     >
+      <img src="img/genre5.svg" alt="Reggaeton" />
+      <h3>Reggaeton</h3>
+     </article>
+     <article
+      class="genre card"
+      style="background: linear-gradient(135deg, #66bb6a, #43a047)"
+     >
+      <img src="img/genre6.svg" alt="Indie" />
+      <h3>Indie</h3>
+     </article>
+    </div>
+   </section>
+  </main>
+
+  <nav class="nav-mobile">
+   <a href="./index.html">Inicio</a>
+   <a href="./explorar.html" class="active">Explorar</a>
+   <a href="./contacto.html">Cuenta</a>
+  </nav>
+ </body>
+</html>
