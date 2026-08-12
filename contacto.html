@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+ <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clon Spotify — Iniciar sesión / Registro</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <meta
+   name="description"
+   content="Iniciar sesión o registrarse en Clon Spotify"
+  />
+ </head>
+ <body>
+  <nav class="nav">
+   <a class="brand" href="./index.html" aria-label="Inicio">
+    <img
+     src="img/logo.png"
+     alt="Soundify logo"
+     class="brand-logo"
+     width="36"
+     height="36"
+    />
+    <span class="brand-text">Soundify</span>
+   </a>
+   <ul class="nav-links">
+    <li><a href="./index.html">Inicio</a></li>
+    <li><a href="./explorar.html">Explorar</a></li>
+    <li><a href="./contacto.html" class="active">Iniciar sesión</a></li>
+   </ul>
+  </nav>
+
+  <main class="container auth">
+   <section class="auth-card card">
+    <h1>Inicia sesión o regístrate</h1>
+    <p class="muted">Accede a tu cuenta para continuar</p>
+
+    <form action="#" method="post" class="auth-form">
+     <label for="email">Email</label>
+     <input
+      id="email"
+      name="email"
+      type="email"
+      required
+      placeholder="tu@ejemplo.com"
+     />
+
+     <label for="password">Contraseña</label>
+     <input
+      id="password"
+      name="password"
+      type="password"
+      required
+      placeholder="Contraseña"
+     />
+
+     <label for="display">Nombre de perfil</label>
+     <input
+      id="display"
+      name="display"
+      type="text"
+      required
+      placeholder="Nombre visible"
+     />
+
+     <label for="birth">Fecha de nacimiento</label>
+     <input id="birth" name="birth" type="date" required />
+
+     <label for="country">País</label>
+     <select id="country" name="country" required>
+      <option value="">Selecciona un país</option>
+      <option>Argentina</option>
+      <option>Chile</option>
+      <option>Colombia</option>
+      <option>España</option>
+      <option>Mexico</option>
+     </select>
+
+     <label class="checkbox"
+      ><input type="checkbox" required /> Acepto los términos y
+      condiciones</label
+     >
+
+     <button type="submit" class="btn-primary">Crear cuenta / Ingresar</button>
+    </form>
+   </section>
+  </main>
+
+  <nav class="nav-mobile">
+   <a href="./index.html">Inicio</a>
+   <a href="./explorar.html">Explorar</a>
+   <a href="./contacto.html" class="active">Cuenta</a>
+  </nav>
+ </body>
+</html>
